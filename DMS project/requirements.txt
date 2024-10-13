@@ -1,0 +1,5 @@
+vllm
+openai
+huggingface_hub
+tqdm
+triton

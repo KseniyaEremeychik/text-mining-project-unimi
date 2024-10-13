@@ -1,0 +1,131 @@
+1000001
+Patients with asthma and chronic obstructive pulmonary disease (COPD) often exhibit similar symptoms. Asthma patients frequently develop COPD as they age, both in cases of allergic and nonallergic asthma, requiring tailored approaches to treatment of these respiratory diseases. Human asthma and COPD patients require individualized treatment plans to manage symptoms of asthma effectively and to prevent respiratory abnormalities or complications. Inflammation and airway remodeling emphasizing the importance of targeted interventions for effective disease management.
+14	20	asthma
+25	62	chronic obstructive pulmonary disease
+64	68	COPD
+102	108	Asthma
+137	141	COPD
+172	203	allergic and nonallergic asthma
+285	291	asthma
+296	300	COPD
+371	377	asthma
+
+1000002
+Type 1 and Type 2 diabetes represent different forms of diabetes mellitus (DM), with distinct pathophysiological mechanisms and symptoms. Patients with type 1 diabetes often develop complications such as ketoacidosis, while those with type 2 diabetes may face insulin resistance. Human diabetes, like mouse diabetes, need tailored interventions to manage blood sugar levels effectively. Glucose metabolism is critical biological processes in these diseases.
+0	26	Type 1 and Type 2 diabetes
+56	73	diabetes mellitus
+75	77	DM
+152	167	type 1 diabetes
+235	250	type 2 diabetes
+286	294	diabetes
+307	315	diabetes
+
+1000003
+Colorectal cancer (CRC), also known as bowel, colon, or rectal cancer. Early-stage and late-stage colorectal cancer present varying clinical symptoms that affect treatment choices. Patients with early-stage colorectal cancer might undergo surgery, while those with late-stage disease usually require chemotherapy or targeted therapies. Human colorectal cancer patients frequently exhibit KRAS mutations, which are important for treatment decisions in the case of colorectal cancer. Metastasis and angiogenesis complicate disease management.
+0	17	Colorectal cancer
+19	21	CRC
+39	69	bowel, colon, or rectal cancer
+71	115	Early-stage and late-stage colorectal cancer
+195	224	early-stage colorectal cancer
+342	359	colorectal cancer
+462	479	colorectal cancer
+481	491	Metastasis
+
+1000004
+Similar treatment approaches can be shared by lung and bronchus cancer. The disease classification includes both non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC), as well as bronchus cancer. All of them involve tumorigenesis that influence treatment approaches. Patients with NSCLC often present with symptoms like cough and weight loss, while those with SCLC may exhibit more aggressive symptoms and require immediate intervention (no need for NSCLC patients). Targeted therapies for specific genetic mutations, such as EGFR and ALK, have significantly improved outcomes for human lung cancer patients. The prognosis of lung cancer can vary widely.
+46	70	lung and bronchus cancer
+113	139	non-small cell lung cancer
+141	146	NSCLC
+152	174	small cell lung cancer
+176	180	SCLC
+194	209	bronchus cancer
+296	301	NSCLC
+375	379	SCLC
+465	470	NSCLC
+573	584	lung cancer
+612	623	lung cancer
+
+1000005
+The two prevalent cardiovascular conditions that can lead to significant morbidity and mortality are coronary artery and heart valve diseases. Coronary artery disease (CAD) is characterized by the narrowing of coronary arteries due to atherosclerosis, resulting in reduced blood flow to the heart muscle. Key symptoms of CAD include lipid metabolism, inflammation, and endothelial dysfunction. Patients may experience shortness of breath or fatigue. Mouse models of CAD are widely used to study the human CAD pathophysiology and to test new therapeutic strategies to prevent spontaneous coronary artery dissection (SCAD). In contrast, heart valve disease involves dysfunction of one or more heart valves, leading to symptoms such as heart murmurs, palpitations, and swelling.
+101	141	coronary artery and heart valve diseases
+143	166	Coronary artery disease
+168	171	CAD
+235	250	atherosclerosis
+321	324	CAD
+466	469	CAD
+505	508	CAD
+575	613	spontaneous coronary artery dissection
+615	619	SCAD
+635	654	heart valve disease
+
+1000006
+Parkinson's disease (PD) and Huntington's disease (HD) are neurodegenerative disorders with distinct but sometimes overlapping clinical features. Parkinson's disease is primarily characterized by motor symptoms such as bradykinesia, rigidity, and tremor, while Huntington's disease symptoms involves progressive motor dysfunction as well as cognitive decline. Human Parkinson's and Huntington's diseases patients require tailored treatments, including dopamine replacement therapies for PD and symptomatic management both for HD and PD. Both diseases are linked to the dysfunction of basal ganglia pathways, leading to movement abnormalities. Juvenile Parkinson's disease (JPD) is a rare form of Parkinson's that occurs in younger patients. Apoptosis, mitochondrial dysfunction, and protein aggregation play important roles in the progression of these diseases.
+0	19	Parkinson's disease
+21	23	PD
+29	49	Huntington's disease
+51	53	HD
+146	165	Parkinson's disease
+261	281	Huntington's disease
+366	404	Parkinson's and Huntington's diaseases
+488	490	PD
+527	529	HD
+534	536	PD
+644	672	Juvenile Parkinson's disease
+674	677	JPD
+
+1000007
+Autoimmune diseases like systemic lupus erythematosus (SLE) and cutaneous lupus erythematosus (CLE) present with overlapping symptoms, including joint pain and inflammation. Multiple organs such as the skin, kidneys, and cardiovascular system can be affected by systemic lupus and cutaneous lupus erythematosus. Treatment for SLE and CLE focuses on targeted therapies, including the use of immunosuppressants to alleviate symptoms and prevent disease progression. SLE has also been observed in animals, particularly in dogs, where dog SLE can manifest as skin lesions and kidney dysfunction. The progression of both SLE and CLE involves T-cell activation, cytokine release, and autoantibody production.
+0	19	Autoimmune diseases
+25	53	systemic lupus erythematosus
+55	58	SLE
+64	93	cutaneous lupus erythematosus
+95	98	CLE
+262	310	systemic lupus and cutaneous lupus erythematosus
+326	329	SLE
+334	337	CLE
+464	467	SLE
+535	538	SLE
+616	619	SLE
+624	627	CLE
+
+1000008
+Alzheimer's disease (AD), frontotemporal dementia (FTD), and young-onset dementia (YOD) are major forms of dementia with distinct neurodegenerative patterns. AD primarily involves memory loss due to synaptic dysfunction and neurodegeneration in the hippocampus, while the characteristics of frontotemporal and young-onset dementia are marked by personality changes and language dysfunction. YOD includes early-onset forms of both AD and FTD, therefore, YOD is more challenging to be recognized. FTD involves protein inclusions like TDP-43, leading to frontal and temporal lobe atrophy. Animal research, particularly with transgenic mice, has provided key insights into these pathologies, aiding the development of potential treatments. In case of mice AD early intervention, lifestyle changes, and medications appeared to be critical for managing the disease complications.
+0	19	Alzheimer's disease
+21	23	AD
+26	49	frontotemporal dementia
+51	54	FTD
+61	81	young-onset dementia
+83	86	YOD
+107	115	dementia
+158	160	AD
+291	330	frontotemporal and young-onset dementia
+391	394	YOD
+430	432	AD
+437	440	FTD
+453	456	YOD
+495	498	FTD
+752	754	AD
+
+1000009
+Atopic and seborrheic dermatitis are common inflammatory skin conditions affecting millions worldwide. Atopic Dermatitis (AD), known also as eczema, is characterized by dry, itchy skin due to a combination of genetic predisposition and environmental triggers. It involves an overactive immune response, particularly a Th2 response, leading to inflammation and a compromised skin barrier. Treatment often includes moisturizers and topical corticosteroids. Seborrheic Dermatitis (SD) features red, greasy patches, mainly caused by the overgrowth of Malassezia yeast and sebaceous gland activity. This condition also involves immune dysregulation and is treated with antifungal creams and medicated shampoos. Both conditions share underlying mechanisms of immune dysregulation and inflammation, impacting the quality of life for many individuals. Human SD forms can often lead to complications in AD, particularly resulting in AD irritations on the face and neck.
+0	32	Atopic and seborrheic dermatitis
+103	120	Atopic Dermatitis
+122	124	AD
+141	147	eczema
+455	476	Seborrheic Dermatitis
+478	480	SD
+850	852	SD
+894	896	AD
+924	926	AD
+
+1000010
+Celiac or Coeliac disease and non-celiac gluten sensitivity (NCGS) are conditions associated with adverse responses to gluten. Celiac disease is an autoimmune disorder characterized by the activation of tissue transglutaminase (tTG) antibodies, leading to inflammation and villous atrophy in the small intestine when gluten is consumed. This results in malabsorption of nutrients, anemia, and other complications. Conversely, NCGS does not involve an autoimmune response or intestinal damage, but still produces gastrointestinal symptoms such as bloating and abdominal pain. In animals, NCGS has been observed in dogs, resulting in similar gastrointestinal distress, but it does not exhibit the same autoimmune pathology as seen in human NCGS. While patients with celiac disease require a strict gluten-free diet to prevent complications, individuals with NCGS often benefit from a gluten-reduced diet without the need for complete avoidance.
+0	25	Celiac or Coeliac disease
+30	59	non-celiac gluten sensitivity
+61	65	NCGS
+127	141	Celiac disease
+426	430	NCGS
+587	591	NCGS
+738	742	NCGS
+764	778	celiac disease
+856	860	NCGS
