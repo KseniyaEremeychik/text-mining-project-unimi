@@ -1,0 +1,840 @@
+{
+    "1000001": {
+        "text": "Patients with asthma and chronic obstructive pulmonary disease (COPD) often exhibit similar symptoms. Asthma patients frequently develop COPD as they age, both in cases of allergic and nonallergic asthma, requiring tailored approaches to treatment of these respiratory diseases. Human asthma and COPD patients require individualized treatment plans to manage symptoms of asthma effectively and to prevent respiratory abnormalities or complications. Inflammation and airway remodeling emphasizing the importance of targeted interventions for effective disease management.",
+        "sentences": [
+            "Patients with asthma and chronic obstructive pulmonary disease (COPD) often exhibit similar symptoms.",
+            "Asthma patients frequently develop COPD as they age, both in cases of allergic and nonallergic asthma, requiring tailored approaches to treatment of these respiratory diseases.",
+            "Human asthma and COPD patients require individualized treatment plans to manage symptoms of asthma effectively and to prevent respiratory abnormalities or complications.",
+            "Inflammation and airway remodeling emphasizing the importance of targeted interventions for effective disease management."
+        ],
+        "annotations": [
+            {
+                "span": "14:20",
+                "mention": "asthma"
+            },
+            {
+                "span": "25:62",
+                "mention": "chronic obstructive pulmonary disease"
+            },
+            {
+                "span": "64:68",
+                "mention": "COPD"
+            },
+            {
+                "span": "102:108",
+                "mention": "Asthma"
+            },
+            {
+                "span": "137:141",
+                "mention": "COPD"
+            },
+            {
+                "span": "172:203",
+                "mention": "allergic and nonallergic asthma"
+            },
+            {
+                "span": "285:291",
+                "mention": "asthma"
+            },
+            {
+                "span": "296:300",
+                "mention": "COPD"
+            },
+            {
+                "span": "371:377",
+                "mention": "asthma"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "```\n<entity type=disease>asthma</entity> and <entity type=disease>chronic obstructive pulmonary disease (COPD)</entity> often exhibit similar symptoms.\n```",
+            "```\n<entity type=disease>Asthma</entity> patients frequently develop <entity type=disease>COPD</entity> as they age, both in cases of allergic and nonallergic <entity type=disease>Asthma</entity>, requiring tailored approaches to treatment of these respiratory diseases.\n```",
+            "Text:\n```<entity type=disease>Human asthma</entity> and <entity type=disease>COPD</entity> patients require individualized treatment plans to manage symptoms of asthma effectively and to prevent respiratory abnormalities or complications.```",
+            "```\n<entity type=disease>Inflammation</entity> and airway remodeling emphasizing the importance of targeted interventions for effective <entity type=disease>disease management</entity>.\n```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```Patients with <entity type=disease>asthma</entity> and <entity type=disease>chronic obstructive pulmonary disease</entity> (<entity type=disease>COPD</entity>) often exhibit similar symptoms.```",
+            "```\n<Asthma patients frequently develop <entity type=disease>COPD</entity> as they age, both in cases of allergic and nonallergic asthma, requiring tailored approaches to treatment of these respiratory <entity type=disease>diseases</entity>.>\n```",
+            "Text:\n```<entity type=disease>Human asthma</entity> and <entity type=disease>COPD</entity> patients require individualized treatment plans to manage symptoms of <entity type=disease>asthma</entity> effectively and to prevent respiratory abnormalities or complications.```",
+            "```\nInflammation and airway remodeling emphasizing the importance of targeted interventions for effective <entity type=disease>disease</entity> management.\n```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"asthma; chronic obstructive pulmonary disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Asthma; COPD\"}\n```",
+            "```\njson:\n{\"diseases\": \"asthma; COPD\"}\n```",
+            "```\njson:\n{\"diseases\": \"inflammation\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "json:\n{\"diseases\": \"asthma; chronic obstructive pulmonary disease; COPD\"}",
+            "```json\n{\"diseases\": \"Asthma; COPD\"}\n```",
+            "```\njson:\n{\"diseases\": \"asthma; COPD\"}\n```",
+            "json:\n{\"diseases\": \"airway remodeling\"}\n"
+        ]
+    },
+    "1000002": {
+        "text": "Type 1 and Type 2 diabetes represent different forms of diabetes mellitus (DM), with distinct pathophysiological mechanisms and symptoms. Patients with type 1 diabetes often develop complications such as ketoacidosis, while those with type 2 diabetes may face insulin resistance. Human diabetes, like mouse diabetes, need tailored interventions to manage blood sugar levels effectively. Glucose metabolism is critical biological processes in these diseases.",
+        "sentences": [
+            "Type 1 and Type 2 diabetes represent different forms of diabetes mellitus (DM), with distinct pathophysiological mechanisms and symptoms.",
+            "Patients with type 1 diabetes often develop complications such as ketoacidosis, while those with type 2 diabetes may face insulin resistance.",
+            "Human diabetes, like mouse diabetes, need tailored interventions to manage blood sugar levels effectively.",
+            "Glucose metabolism is critical biological processes in these diseases."
+        ],
+        "annotations": [
+            {
+                "span": "0:26",
+                "mention": "Type 1 and Type 2 diabetes"
+            },
+            {
+                "span": "56:73",
+                "mention": "diabetes mellitus"
+            },
+            {
+                "span": "75:77",
+                "mention": "DM"
+            },
+            {
+                "span": "152:167",
+                "mention": "type 1 diabetes"
+            },
+            {
+                "span": "235:250",
+                "mention": "type 2 diabetes"
+            },
+            {
+                "span": "286:294",
+                "mention": "diabetes"
+            },
+            {
+                "span": "307:315",
+                "mention": "diabetes"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```<entity type=disease>Type 1 diabetes</entity> and <entity type=disease>Type 2 diabetes</entity> represent different forms of <entity type=disease>diabetes mellitus (DM)</entity>, with distinct pathophysiological mechanisms and symptoms.```",
+            "```html\n<entity type=disease>type 1 diabetes</entity> patients often develop complications such as <entity type=disease>ketoacidosis</entity>, while those with <entity type=disease>type 2 diabetes</entity> may face insulin resistance.\n```",
+            "Text:\n```<entity type=disease>Human diabetes</entity>, like mouse diabetes, need tailored interventions to manage blood sugar levels effectively.```",
+            "Text:\n```<entity type=disease>Glucose metabolism</entity> is critical biological processes in these <entity type=disease>diseases</entity>.```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "Text:\n```<entity type=disease>Type 1 diabetes</entity> and <entity type=disease>Type 2 diabetes</entity> represent different forms of <entity type=disease>diabetes mellitus</entity> (<entity type=disease>DM</entity>), with distinct pathophysiological mechanisms and symptoms.```",
+            "```Patients with <entity type=disease>type 1 diabetes</entity> often develop complications such as <entity type=disease>ketoacidosis</entity>, while those with <entity type=disease>type 2 diabetes</entity> may face <entity type=disease>insulin resistance</entity>.```",
+            "Text:\n```<entity type=disease>Human diabetes</entity>, like <entity type=disease>mouse diabetes</entity>, need tailored interventions to manage blood sugar levels effectively.```",
+            "```\n<entity type=disease>Glucose metabolism</entity> is critical biological processes in these diseases.\n```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"Type 1 diabetes; Type 2 diabetes\"}\n```",
+            "```\njson:\n{\"diseases\": \"type 1 diabetes; type 2 diabetes\"}\n```",
+            "```\njson:\n{\"diseases\": \"diabetes\"}\n```",
+            "```\njson:\n{\"diseases\": \"diseases\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "```json\n{\"diseases\": \"Type 1 diabetes; Type 2 diabetes; diabetes mellitus; DM\"}\n```",
+            "```json\n{\"diseases\": \"type 1 diabetes; type 2 diabetes\"}\n```",
+            "json:\n{\"diseases\": \"Human diabetes; mouse diabetes\"}",
+            "json:\n{\"diseases\": \"Glucose metabolism\"}\n"
+        ]
+    },
+    "1000003": {
+        "text": "Colorectal cancer (CRC), also known as bowel, colon, or rectal cancer. Early-stage and late-stage colorectal cancer present varying clinical symptoms that affect treatment choices. Patients with early-stage colorectal cancer might undergo surgery, while those with late-stage disease usually require chemotherapy or targeted therapies. Human colorectal cancer patients frequently exhibit KRAS mutations, which are important for treatment decisions in the case of colorectal cancer. Metastasis and angiogenesis complicate disease management.",
+        "sentences": [
+            "Colorectal cancer (CRC), also known as bowel, colon, or rectal cancer.",
+            "Early-stage and late-stage colorectal cancer present varying clinical symptoms that affect treatment choices.",
+            "Patients with early-stage colorectal cancer might undergo surgery, while those with late-stage disease usually require chemotherapy or targeted therapies.",
+            "Human colorectal cancer patients frequently exhibit KRAS mutations, which are important for treatment decisions in the case of colorectal cancer.",
+            "Metastasis and angiogenesis complicate disease management."
+        ],
+        "annotations": [
+            {
+                "span": "0:17",
+                "mention": "Colorectal cancer"
+            },
+            {
+                "span": "19:21",
+                "mention": "CRC"
+            },
+            {
+                "span": "39:69",
+                "mention": "bowel, colon, or rectal cancer"
+            },
+            {
+                "span": "71:115",
+                "mention": "Early-stage and late-stage colorectal cancer"
+            },
+            {
+                "span": "195:224",
+                "mention": "early-stage colorectal cancer"
+            },
+            {
+                "span": "342:359",
+                "mention": "colorectal cancer"
+            },
+            {
+                "span": "462:479",
+                "mention": "colorectal cancer"
+            },
+            {
+                "span": "481:491",
+                "mention": "Metastasis"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```<entity type=disease>Colorectal cancer (CRC)</entity>, also known as bowel, colon, or rectal cancer.</entity>```",
+            "```\n<entity type=disease>Early-stage and late-stage colorectal cancer</entity> present varying clinical symptoms that affect treatment choices.\n```",
+            "```\n<entity type=disease>colorectal cancer</entity>\n```",
+            "Text:\n```<entity type=disease>Human colorectal cancer</entity> patients frequently exhibit KRAS mutations, which are important for treatment decisions in the case of <entity type=disease>colorectal cancer</entity>.```",
+            "Text:\n```<entity type=disease>Metastasis</entity> and <entity type=disease>angiogenesis</entity> complicate disease management.```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```\n<entity type=disease>Colorectal cancer</entity> (<entity type=disease>CRC</entity>), also known as bowel, colon, or rectal cancer.\n```",
+            "Text:\n```Early-stage and late-stage <entity type=disease>colorectal cancer</entity> present varying clinical symptoms that affect treatment choices.```",
+            "```Patients with early-stage <entity type=disease>colorectal cancer</entity> might undergo surgery, while those with late-stage <entity type=disease>colorectal cancer</entity> usually require chemotherapy or targeted therapies.\n```",
+            "Text:\n```<entity type=disease>Human colorectal cancer</entity> patients frequently exhibit KRAS mutations, which are important for treatment decisions in the case of <entity type=disease>colorectal cancer</entity>.```",
+            "```\n<entity type=disease>Metastasis</entity> and angiogenesis complicate disease management.\n```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"Colorectal cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"colorectal cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"colorectal cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"colorectal cancer\"}\n```",
+            "json:\n{\"diseases\": \"Metastasis; angiogenesis\"}"
+        ],
+        "response_extract_rules_phi3_small": [
+            "json:\n{\"diseases\": \"Colorectal cancer; CRC\"}",
+            "json:\n{\"diseases\": \"colorectal cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"colorectal cancer\"}\n```",
+            "```json\n{\"diseases\": \"colorectal cancer; colorectal cancer\"}\n```",
+            "json:\n{\"diseases\": \"Metastasis; angiogenesis\"}\n```"
+        ]
+    },
+    "1000004": {
+        "text": "Similar treatment approaches can be shared by lung and bronchus cancer. The disease classification includes both non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC), as well as bronchus cancer. All of them involve tumorigenesis that influence treatment approaches. Patients with NSCLC often present with symptoms like cough and weight loss, while those with SCLC may exhibit more aggressive symptoms and require immediate intervention (no need for NSCLC patients). Targeted therapies for specific genetic mutations, such as EGFR and ALK, have significantly improved outcomes for human lung cancer patients. The prognosis of lung cancer can vary widely.",
+        "sentences": [
+            "Similar treatment approaches can be shared by lung and bronchus cancer.",
+            "The disease classification includes both non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC), as well as bronchus cancer.",
+            "All of them involve tumorigenesis that influence treatment approaches.",
+            "Patients with NSCLC often present with symptoms like cough and weight loss, while those with SCLC may exhibit more aggressive symptoms and require immediate intervention (no need for NSCLC patients).",
+            "Targeted therapies for specific genetic mutations, such as EGFR and ALK, have significantly improved outcomes for human lung cancer patients.",
+            "The prognosis of lung cancer can vary widely."
+        ],
+        "annotations": [
+            {
+                "span": "46:70",
+                "mention": "lung and bronchus cancer"
+            },
+            {
+                "span": "113:139",
+                "mention": "non-small cell lung cancer"
+            },
+            {
+                "span": "141:146",
+                "mention": "NSCLC"
+            },
+            {
+                "span": "152:174",
+                "mention": "small cell lung cancer"
+            },
+            {
+                "span": "176:180",
+                "mention": "SCLC"
+            },
+            {
+                "span": "194:209",
+                "mention": "bronchus cancer"
+            },
+            {
+                "span": "296:301",
+                "mention": "NSCLC"
+            },
+            {
+                "span": "375:379",
+                "mention": "SCLC"
+            },
+            {
+                "span": "465:470",
+                "mention": "NSCLC"
+            },
+            {
+                "span": "573:584",
+                "mention": "lung cancer"
+            },
+            {
+                "span": "612:623",
+                "mention": "lung cancer"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```Similar treatment approaches can be shared by <entity type=disease>lung cancer</entity> and <entity type=disease>bronchus cancer</entity>.```",
+            "Text:\n```The <entity type=disease>non-small cell lung cancer (NSCLC)</entity> and <entity type=disease>small cell lung cancer (SCLC)</entity>, as well as <entity type=disease>bronchus cancer</entity>, are included in the disease classification.```",
+            "Text:\n```All of them involve <entity type=disease>tumorigenesis</entity> that influence treatment approaches.```",
+            "```html\nPatients with <entity type=disease>NSCLC</entity> often present with symptoms like cough and weight loss, while those with <entity type=disease>SCLC</entity> may exhibit more aggressive symptoms and require immediate intervention.\n```",
+            "Text:\n```Targeted therapies for specific genetic mutations, such as <entity type=disease>EGFR</entity> and <entity type=disease>ALK</entity>, have significantly improved outcomes for human lung cancer patients.```",
+            "Text:\n```The prognosis of <entity type=disease>lung cancer</entity> can vary widely.```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```\nSimilar treatment approaches can be shared by <entity type=disease>lung and bronchus cancer</entity>.\n```",
+            "```\nThe <entity type=disease>disease classification includes both non-small cell lung cancer</entity> (<entity type=disease>NSCLC</entity>) and <entity type=disease>small cell lung cancer</entity> (<entity type=disease>SCLC</entity>), as well as <entity type=disease>bronchus cancer</entity>.\n```",
+            "Text:\n```All of them involve <entity type=disease>tumorigenesis</entity> that influence treatment approaches.```",
+            "```Patients with <entity type=disease>NSCLC</entity> often present with symptoms like cough and weight loss, while those with <entity type=disease>SCLC</entity> may exhibit more aggressive symptoms and require immediate intervention (<entity type=disease>NSCLC</entity> patients).```",
+            "Text:\n```Targeted therapies for specific genetic mutations, such as <entity type=disease>EGFR</entity> and <entity type=disease>ALK</entity>, have significantly improved outcomes for human lung cancer patients.```",
+            "Text:\n```The prognosis of <entity type=disease>lung cancer</entity> can vary widely.```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"lung cancer; bronchus cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"non-small cell lung cancer; small cell lung cancer; bronchus cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"\"}\n```",
+            "```\njson:\n{\"diseases\": \"NSCLC; SCLC\"}\n```",
+            "```\njson:\n{\"diseases\": \"lung cancer\"}\n```",
+            "```\njson:\n{\"diseases\": \"lung cancer\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "json:\n{\"diseases\": \"lung and bronchus cancer\"}",
+            "```json\n{\"diseases\": \"non-small cell lung cancer; NSCLC; small cell lung cancer; SCLC; bronchus cancer\"}\n```",
+            "json:\n{}\n(Note: The provided text does not mention any specific disease, so the output is an empty JSON object.)",
+            "```json\n{\"diseases\": \"NSCLC; SCLC\"}\n```",
+            "```json\n{\"diseases\": \"human lung cancer; EGFR; ALK\"}\n```",
+            "json:\n{\"diseases\": \"lung cancer\"}\n```"
+        ]
+    },
+    "1000005": {
+        "text": "The two prevalent cardiovascular conditions that can lead to significant morbidity and mortality are coronary artery and heart valve diseases. Coronary artery disease (CAD) is characterized by the narrowing of coronary arteries due to atherosclerosis, resulting in reduced blood flow to the heart muscle. Key symptoms of CAD include lipid metabolism, inflammation, and endothelial dysfunction. Patients may experience shortness of breath or fatigue. Mouse models of CAD are widely used to study the human CAD pathophysiology and to test new therapeutic strategies to prevent spontaneous coronary artery dissection (SCAD). In contrast, heart valve disease involves dysfunction of one or more heart valves, leading to symptoms such as heart murmurs, palpitations, and swelling.",
+        "sentences": [
+            "The two prevalent cardiovascular conditions that can lead to significant morbidity and mortality are coronary artery and heart valve diseases.",
+            "Coronary artery disease (CAD) is characterized by the narrowing of coronary arteries due to atherosclerosis, resulting in reduced blood flow to the heart muscle.",
+            "Key symptoms of CAD include lipid metabolism, inflammation, and endothelial dysfunction.",
+            "Patients may experience shortness of breath or fatigue.",
+            "Mouse models of CAD are widely used to study the human CAD pathophysiology and to test new therapeutic strategies to prevent spontaneous coronary artery dissection (SCAD).",
+            "In contrast, heart valve disease involves dysfunction of one or more heart valves, leading to symptoms such as heart murmurs, palpitations, and swelling."
+        ],
+        "annotations": [
+            {
+                "span": "101:141",
+                "mention": "coronary artery and heart valve diseases"
+            },
+            {
+                "span": "143:166",
+                "mention": "Coronary artery disease"
+            },
+            {
+                "span": "168:171",
+                "mention": "CAD"
+            },
+            {
+                "span": "235:250",
+                "mention": "atherosclerosis"
+            },
+            {
+                "span": "321:324",
+                "mention": "CAD"
+            },
+            {
+                "span": "466:469",
+                "mention": "CAD"
+            },
+            {
+                "span": "505:508",
+                "mention": "CAD"
+            },
+            {
+                "span": "575:613",
+                "mention": "spontaneous coronary artery dissection"
+            },
+            {
+                "span": "615:619",
+                "mention": "SCAD"
+            },
+            {
+                "span": "635:654",
+                "mention": "heart valve disease"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```The two prevalent <entity type=disease>cardiovascular conditions</entity> that can lead to significant morbidity and mortality are <entity type=disease>coronary artery disease</entity> and <entity type=disease>heart valve disease</entity>.\n```",
+            "```<entity type=disease>Coronary artery disease (CAD)</entity> is characterized by the narrowing of coronary arteries due to atherosclerosis, resulting in reduced blood flow to the heart muscle.```",
+            "Text:\n```<entity type=disease>CAD</entity> include lipid metabolism, inflammation, and endothelial dysfunction.```",
+            "There are no disease mentions in the provided text.",
+            "```\nText:\n```Mouse models of <entity type=disease>CAD</entity> are widely used to study the human <entity type=disease>CAD</entity> pathophysiology and to test new therapeutic strategies to prevent spontaneous coronary artery dissection (SCAD).\n```",
+            "```In contrast, <entity type=disease>heart valve disease</entity> involves dysfunction of one or more heart valves, leading to symptoms such as heart murmurs, palpitations, and swelling.\n```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```\nThe two prevalent <entity type=disease>cardiovascular conditions</entity> that can lead to significant morbidity and mortality are <entity type=disease>coronary artery disease</entity> and <entity type=disease>heart valve disease</entity>.\n```",
+            "```\n<entity type=disease>Coronary artery disease</entity> (<entity type=disease>CAD</entity>) is characterized by the narrowing of coronary arteries due to atherosclerosis, resulting in reduced blood flow to the heart muscle.\n```",
+            "```\n<Key symptoms of <entity type=disease>CAD</entity> include lipid metabolism, inflammation, and endothelial dysfunction.>\n```",
+            "Patients may experience shortness of breath or fatigue.",
+            "```\nMouse models of <entity type=disease>CAD</entity> are widely used to study the human <entity type=disease>CAD</entity> pathophysiology and to test new therapeutic strategies to prevent spontaneous coronary artery dissection (<entity type=disease>SCAD</entity>).\n```",
+            "In contrast, <entity type=disease>heart valve disease</entity> involves dysfunction of one or more heart valves, leading to symptoms such as heart murmurs, palpitations, and swelling."
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"coronary artery disease; heart valve disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Coronary artery disease; atherosclerosis\"}\n```",
+            "```\njson:\n{\"diseases\": \"CAD\"}\n```",
+            "``\njson:\n{\"diseases\": \"\"}\n```\n<|assistant|>",
+            "```\njson:\n{\"diseases\": \"CAD; spontaneous coronary artery dissection\"}\n```",
+            "```\njson:\n{\"diseases\": \"heart valve disease\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "```json\n{\"diseases\": \"coronary artery and heart valve diseases\"}\n```",
+            "```json\n{\"diseases\": \"Coronary artery disease; CAD\"}\n```",
+            "json:\n{\"diseases\": \"CAD\"}\n",
+            "json:\n{}\n(Note: The provided text does not mention any specific disease, so the output is an empty JSON object.)",
+            "```\njson:\n{\"diseases\": \"coronary artery dissection; spontaneous coronary artery dissection\"}\n```",
+            "```json\n{\"diseases\": \"heart valve disease\"}\n```"
+        ]
+    },
+    "1000006": {
+        "text": "Parkinson's disease (PD) and Huntington's disease (HD) are neurodegenerative disorders with distinct but sometimes overlapping clinical features. Parkinson's disease is primarily characterized by motor symptoms such as bradykinesia, rigidity, and tremor, while Huntington's disease symptoms involves progressive motor dysfunction as well as cognitive decline. Human Parkinson's and Huntington's diseases patients require tailored treatments, including dopamine replacement therapies for PD and symptomatic management both for HD and PD. Both diseases are linked to the dysfunction of basal ganglia pathways, leading to movement abnormalities. Juvenile Parkinson's disease (JPD) is a rare form of Parkinson's that occurs in younger patients. Apoptosis, mitochondrial dysfunction, and protein aggregation play important roles in the progression of these diseases.",
+        "sentences": [
+            "Parkinson's disease (PD) and Huntington's disease (HD) are neurodegenerative disorders with distinct but sometimes overlapping clinical features.",
+            "Parkinson's disease is primarily characterized by motor symptoms such as bradykinesia, rigidity, and tremor, while Huntington's disease symptoms involves progressive motor dysfunction as well as cognitive decline.",
+            "Human Parkinson's and Huntington's diseases patients require tailored treatments, including dopamine replacement therapies for PD and symptomatic management both for HD and PD.",
+            "Both diseases are linked to the dysfunction of basal ganglia pathways, leading to movement abnormalities.",
+            "Juvenile Parkinson's disease (JPD) is a rare form of Parkinson's that occurs in younger patients.",
+            "Apoptosis, mitochondrial dysfunction, and protein aggregation play important roles in the progression of these diseases."
+        ],
+        "annotations": [
+            {
+                "span": "0:19",
+                "mention": "Parkinson's disease"
+            },
+            {
+                "span": "21:23",
+                "mention": "PD"
+            },
+            {
+                "span": "29:49",
+                "mention": "Huntington's disease"
+            },
+            {
+                "span": "51:53",
+                "mention": "HD"
+            },
+            {
+                "span": "146:165",
+                "mention": "Parkinson's disease"
+            },
+            {
+                "span": "261:281",
+                "mention": "Huntington's disease"
+            },
+            {
+                "span": "366:404",
+                "mention": "Parkinson's and Huntington's diaseases"
+            },
+            {
+                "span": "488:490",
+                "mention": "PD"
+            },
+            {
+                "span": "527:529",
+                "mention": "HD"
+            },
+            {
+                "span": "534:536",
+                "mention": "PD"
+            },
+            {
+                "span": "644:672",
+                "mention": "Juvenile Parkinson's disease"
+            },
+            {
+                "span": "674:677",
+                "mention": "JPD"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text with markup:\n```<entity type=disease>Parkinson's disease (PD)</entity> and <entity type=disease>Huntington's disease (HD)</entity> are neurodegenerative disorders with distinct but sometimes overlapping clinical features.```",
+            "Text:\n```<entity type=disease>Parkinson's disease</entity> is primarily characterized by motor symptoms such as bradykinesia, rigidity, and tremor, while <entity type=disease>Huntington's disease</entity> symptoms involve progressive motor dysfunction as well as cognitive decline.```",
+            "Text:\n```<entity type=disease>Human Parkinson's</entity> and <entity type=disease>Huntington's diseases</entity> patients require tailored treatments, including dopamine replacement therapies for <entity type=disease>Parkinson's</entity> and symptomatic management both for <entity type=disease>Huntington's</entity> and <entity type=disease>Parkinson's</entity>.```",
+            "Text:\n```Both <entity type=disease>diseases</entity> are linked to the dysfunction of basal ganglia pathways, leading to movement abnormalities.```",
+            "Text:\n```<entity type=disease>Juvenile Parkinson's disease (JPD)</entity> is a rare form of <entity type=disease>Parkinson's</entity> that occurs in younger patients.```",
+            "Text:\n```<entity type=disease>Apoptosis</entity>, mitochondrial dysfunction, and protein aggregation play important roles in the progression of these <entity type=disease>diseases</entity>.```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```\n<entity type=disease>Parkinson's disease</entity> (<entity type=disease>PD</entity>) and <entity type=disease>Huntington's disease</entity> (<entity type=disease>HD</entity>) are neurodegenerative disorders with distinct but sometimes overlapping clinical features.\n```",
+            "```\n<entity type=disease>Parkinson's disease</entity> is primarily characterized by motor symptoms such as bradykinesia, rigidity, and tremor, while <entity type=disease>Huntington's disease</entity> symptoms involve progressive motor dysfunction as well as cognitive decline.\n```",
+            "Text:\n```Human <entity type=disease>Parkinson's disease</entity> and <entity type=disease>Huntington's disease</entity> patients require tailored treatments, including dopamine replacement therapies for <entity type=disease>Parkinson's disease</entity> and symptomatic management both for <entity type=disease>Huntington's disease</entity> and <entity type=disease>Parkinson's disease</entity>.```",
+            "Both <entity type=disease>diseases</entity> are linked to the dysfunction of basal ganglia pathways, leading to movement abnormalities.",
+            "```\n<entity type=disease>Juvenile Parkinson's disease</entity> (<entity type=disease>JPD</entity>) is a rare form of Parkinson's that occurs in younger patients.\n```",
+            "```\n<entity type=disease>Apoptosis</entity>, mitochondrial dysfunction, and protein aggregation play important roles in the progression of these diseases.\n```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"Parkinson's disease; Huntington's disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Parkinson's disease; Huntington's disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Parkinson's disease; Huntington's disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Parkinson's disease; Huntington's disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Juvenile Parkinson's disease\"}\n```",
+            "```\njson:\n{\"diseases\": \"Apoptosis; mitochondrial dysfunction; protein aggregation\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "```json\n{\"diseases\": \"Parkinson's disease; PD; Huntington's disease; HD\"}\n```",
+            "```\njson:\n{\"diseases\": \"Parkinson's disease; Huntington's disease\"}\n```",
+            "```json\n{\"diseases\": \"Human Parkinson's disease; Huntington's disease\"}\n```",
+            "json:\n{\"diseases\": \"Parkinson's disease; Huntington's disease\"}",
+            "json:\n{\"diseases\": \"Juvenile Parkinson's disease; JPD\"}",
+            "json:\n{\"diseases\": \"Apoptosis; mitochondrial dysfunction; protein aggregation\"}"
+        ]
+    },
+    "1000007": {
+        "text": "Autoimmune diseases like systemic lupus erythematosus (SLE) and cutaneous lupus erythematosus (CLE) present with overlapping symptoms, including joint pain and inflammation. Multiple organs such as the skin, kidneys, and cardiovascular system can be affected by systemic lupus and cutaneous lupus erythematosus. Treatment for SLE and CLE focuses on targeted therapies, including the use of immunosuppressants to alleviate symptoms and prevent disease progression. SLE has also been observed in animals, particularly in dogs, where dog SLE can manifest as skin lesions and kidney dysfunction. The progression of both SLE and CLE involves T-cell activation, cytokine release, and autoantibody production.",
+        "sentences": [
+            "Autoimmune diseases like systemic lupus erythematosus (SLE) and cutaneous lupus erythematosus (CLE) present with overlapping symptoms, including joint pain and inflammation.",
+            "Multiple organs such as the skin, kidneys, and cardiovascular system can be affected by systemic lupus and cutaneous lupus erythematosus.",
+            "Treatment for SLE and CLE focuses on targeted therapies, including the use of immunosuppressants to alleviate symptoms and prevent disease progression.",
+            "SLE has also been observed in animals, particularly in dogs, where dog SLE can manifest as skin lesions and kidney dysfunction.",
+            "The progression of both SLE and CLE involves T-cell activation, cytokine release, and autoantibody production."
+        ],
+        "annotations": [
+            {
+                "span": "0:19",
+                "mention": "Autoimmune diseases"
+            },
+            {
+                "span": "25:53",
+                "mention": "systemic lupus erythematosus"
+            },
+            {
+                "span": "55:58",
+                "mention": "SLE"
+            },
+            {
+                "span": "64:93",
+                "mention": "cutaneous lupus erythematosus"
+            },
+            {
+                "span": "95:98",
+                "mention": "CLE"
+            },
+            {
+                "span": "262:310",
+                "mention": "systemic lupus and cutaneous lupus erythematosus"
+            },
+            {
+                "span": "326:329",
+                "mention": "SLE"
+            },
+            {
+                "span": "334:337",
+                "mention": "CLE"
+            },
+            {
+                "span": "464:467",
+                "mention": "SLE"
+            },
+            {
+                "span": "535:538",
+                "mention": "SLE"
+            },
+            {
+                "span": "616:619",
+                "mention": "SLE"
+            },
+            {
+                "span": "624:627",
+                "mention": "CLE"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```<entity type=disease>Autoimmune diseases</entity> like <entity type=disease>systemic lupus erythematosus (SLE)</entity> and <entity type=disease>cutaneous lupus erythematosus (CLE)</entity> present with overlapping symptoms, including joint pain and inflammation.```",
+            "Text:\n```Multiple organs such as the <entity type=disease>skin</entity>, <entity type=disease>kidneys</entity>, and <entity type=disease>cardiovascular system</entity> can be affected by <entity type=disease>systemic lupus</entity> and <entity type=disease>cutaneous lupus erythematosus</entity>.\n```",
+            "```html\nTreatment for <entity type=disease>SLE</entity> and <entity type=disease>CLE</entity> focuses on targeted therapies, including the use of immunosuppressants to alleviate symptoms and prevent disease progression.\n```",
+            "Text:\n```<entity type=disease>SLE</entity> has also been observed in animals, particularly in dogs, where dog <entity type=disease>SLE</entity> can manifest as skin lesions and kidney dysfunction.```",
+            "```\nThe progression of both <entity type=disease>SLE</entity> and CLE involves T-cell activation, cytokine release, and autoantibody production.\n```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "Text with markup:\n```Autoimmune diseases like <entity type=disease>systemic lupus erythematosus</entity> (SLE) and <entity type=disease>cutaneous lupus erythematosus</entity> (CLE) present with overlapping symptoms, including joint pain and inflammation.```",
+            "Text:\n```Multiple organs such as the <entity type=disease>skin, kidneys, and cardiovascular system</entity> can be affected by <entity type=disease>systemic lupus and cutaneous lupus erythematosus</entity>.```",
+            "Text with markup:\n```Treatment for <entity type=disease>SLE</entity> and <entity type=disease>CLE</entity> focuses on targeted therapies, including the use of immunosuppressants to alleviate symptoms and prevent disease progression.```",
+            "```\n<entity type=disease>SLE</entity> has also been observed in animals, particularly in dogs, where <entity type=disease>dog SLE</entity> can manifest as skin lesions and kidney dysfunction.\n```",
+            "```\nThe progression of both <entity type=disease>SLE</entity> and <entity type=disease>CLE</entity> involves T-cell activation, cytokine release, and autoantibody production.\n```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"systemic lupus erythematosus; cutaneous lupus erythematosus\"}\n```",
+            "```\njson:\n{\"diseases\": \"systemic lupus; cutaneous lupus erythematosus\"}\n```",
+            "```\njson:\n{\"diseases\": \"SLE; CLE\"}\n```",
+            "```\njson:\n{\"diseases\": \"SLE\"}\n```",
+            "```\njson:\n{\"diseases\": \"SLE; CLE\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "```json\n{\"diseases\": \"systemic lupus erythematosus; cutaneous lupus erythematosus\"}\n```",
+            "```json\n{\"diseases\": \"systemic lupus; cutaneous lupus erythematosus\"}\n```",
+            "```json\n{\"diseases\": \"SLE; CLE\"}\n```",
+            "```\njson:\n{\"diseases\": \"SLE; dog SLE\"}\n```",
+            "```json\n{\"diseases\": \"SLE; CLE\"}\n```"
+        ]
+    },
+    "1000008": {
+        "text": "Alzheimer's disease (AD), frontotemporal dementia (FTD), and young-onset dementia (YOD) are major forms of dementia with distinct neurodegenerative patterns. AD primarily involves memory loss due to synaptic dysfunction and neurodegeneration in the hippocampus, while the characteristics of frontotemporal and young-onset dementia are marked by personality changes and language dysfunction. YOD includes early-onset forms of both AD and FTD, therefore, YOD is more challenging to be recognized. FTD involves protein inclusions like TDP-43, leading to frontal and temporal lobe atrophy. Animal research, particularly with transgenic mice, has provided key insights into these pathologies, aiding the development of potential treatments. In case of mice AD early intervention, lifestyle changes, and medications appeared to be critical for managing the disease complications.",
+        "sentences": [
+            "Alzheimer's disease (AD), frontotemporal dementia (FTD), and young-onset dementia (YOD) are major forms of dementia with distinct neurodegenerative patterns.",
+            "AD primarily involves memory loss due to synaptic dysfunction and neurodegeneration in the hippocampus, while the characteristics of frontotemporal and young-onset dementia are marked by personality changes and language dysfunction.",
+            "YOD includes early-onset forms of both AD and FTD, therefore, YOD is more challenging to be recognized.",
+            "FTD involves protein inclusions like TDP-43, leading to frontal and temporal lobe atrophy.",
+            "Animal research, particularly with transgenic mice, has provided key insights into these pathologies, aiding the development of potential treatments.",
+            "In case of mice AD early intervention, lifestyle changes, and medications appeared to be critical for managing the disease complications."
+        ],
+        "annotations": [
+            {
+                "span": "0:19",
+                "mention": "Alzheimer's disease"
+            },
+            {
+                "span": "21:23",
+                "mention": "AD"
+            },
+            {
+                "span": "26:49",
+                "mention": "frontotemporal dementia"
+            },
+            {
+                "span": "51:54",
+                "mention": "FTD"
+            },
+            {
+                "span": "61:81",
+                "mention": "young-onset dementia"
+            },
+            {
+                "span": "83:86",
+                "mention": "YOD"
+            },
+            {
+                "span": "107:115",
+                "mention": "dementia"
+            },
+            {
+                "span": "158:160",
+                "mention": "AD"
+            },
+            {
+                "span": "291:330",
+                "mention": "frontotemporal and young-onset dementia"
+            },
+            {
+                "span": "391:394",
+                "mention": "YOD"
+            },
+            {
+                "span": "430:432",
+                "mention": "AD"
+            },
+            {
+                "span": "437:440",
+                "mention": "FTD"
+            },
+            {
+                "span": "453:456",
+                "mention": "YOD"
+            },
+            {
+                "span": "495:498",
+                "mention": "FTD"
+            },
+            {
+                "span": "752:754",
+                "mention": "AD"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```<entity type=disease>Alzheimer's disease (AD)</entity>, <entity type=disease>frontotemporal dementia (FTD)</entity>, and <entity type=disease>young-onset dementia (YOD)</entity> are major forms of dementia with distinct neurodegenerative patterns.```",
+            "Text:\n```<entity type=disease>Alzheimer's disease</entity> primarily involves memory loss due to synaptic dysfunction and neurodegeneration in the hippocampus, while the characteristics of <entity type=disease>frontotemporal dementia</entity> and <entity type=disease>young-onset dementia</entity> are marked by personality changes and language dysfunction.```",
+            "```\n<entity type=disease>YOD</entity> includes early-onset forms of both <entity type=disease>AD</entity> and <entity type=disease>FTD</entity>, therefore, <entity type=disease>YOD</entity> is more challenging to be recognized.\n```",
+            "Text:\n```<entity type=disease>FTD</entity> involves protein inclusions like TDP-43, leading to frontal and temporal lobe atrophy.```",
+            "Text:\n```Animal research, particularly with transgenic mice, has provided key insights into these pathologies, aiding the development of potential treatments.\n```",
+            "```\nIn case of mice <entity type=disease>AD</entity> early intervention, lifestyle changes, and medications appeared to be critical for managing the disease complications.\n```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```\n<entity type=disease>Alzheimer's disease</entity> (<entity type=disease>AD</entity>), <entity type=disease>frontotemporal dementia</entity> (<entity type=disease>FTD</entity>), and <entity type=disease>young-onset dementia</entity> (<entity type=disease>YOD</entity>) are major forms of dementia with distinct neurodegenerative patterns.\n```",
+            "```\n<entity type=disease>Alzheimer's disease</entity> (AD) primarily involves memory loss due to synaptic dysfunction and neurodegeneration in the hippocampus, while the characteristics of <entity type=disease>frontotemporal dementia</entity> and <entity type=disease>young-onset dementia</entity> are marked by personality changes and language dysfunction.\n```",
+            "```\n<entity type=disease>YOD</entity> includes early-onset forms of both <entity type=disease>AD</entity> and <entity type=disease>FTD</entity>, therefore, <entity type=disease>YOD</entity> is more challenging to be recognized.\n```",
+            "Text:\n```<entity type=disease>FTD</entity> involves protein inclusions like TDP-43, leading to frontal and temporal lobe atrophy.```",
+            "Text:\n```Animal research, particularly with transgenic mice, has provided key insights into <entity type=disease>these pathologies</entity>, aiding the development of potential treatments.```",
+            "In case of mice <entity type=disease>AD</entity> early intervention, lifestyle changes, and medications appeared to be critical for managing the disease complications."
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"Alzheimer's disease; frontotemporal dementia; young-onset dementia\"}\n```",
+            "```\njson:\n{\"diseases\": \"Alzheimer's disease; frontotemporal dementia; young-onset dementia\"}\n```",
+            "```\njson:\n{\"diseases\": \"early-onset Alzheimer's disease; frontotemporal dementia\"}\n```",
+            "```\njson:\n{\"diseases\": \"FTD\"}\n```",
+            "```\njson:\n{}\n```",
+            "```\njson:\n{\"diseases\": \"Alzheimer's disease\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "```json\n{\"diseases\": \"Alzheimer's disease; frontotemporal dementia; young-onset dementia\"}\n```",
+            "```\njson:\n{\"diseases\": \"Alzheimer's disease; frontotemporal dementia; young-onset dementia\"}\n```",
+            "```\njson:\n{\"diseases\": \"early-onset Alzheimer's disease; early-onset frontotemporal dementia; YOD\"}\n```",
+            "json:\n{\"diseases\": \"FTD\"}",
+            "json:\n{}\n(Note: The text does not mention any specific disease names or disease classes, so the output is an empty JSON object.)",
+            "```\njson:\n{\"diseases\": \"AD\"}\n```"
+        ]
+    },
+    "1000009": {
+        "text": "Atopic and seborrheic dermatitis are common inflammatory skin conditions affecting millions worldwide. Atopic Dermatitis (AD), known also as eczema, is characterized by dry, itchy skin due to a combination of genetic predisposition and environmental triggers. It involves an overactive immune response, particularly a Th2 response, leading to inflammation and a compromised skin barrier. Treatment often includes moisturizers and topical corticosteroids. Seborrheic Dermatitis (SD) features red, greasy patches, mainly caused by the overgrowth of Malassezia yeast and sebaceous gland activity. This condition also involves immune dysregulation and is treated with antifungal creams and medicated shampoos. Both conditions share underlying mechanisms of immune dysregulation and inflammation, impacting the quality of life for many individuals. Human SD forms can often lead to complications in AD, particularly resulting in AD irritations on the face and neck.",
+        "sentences": [
+            "Atopic and seborrheic dermatitis are common inflammatory skin conditions affecting millions worldwide.",
+            "Atopic Dermatitis (AD), known also as eczema, is characterized by dry, itchy skin due to a combination of genetic predisposition and environmental triggers.",
+            "It involves an overactive immune response, particularly a Th2 response, leading to inflammation and a compromised skin barrier.",
+            "Treatment often includes moisturizers and topical corticosteroids.",
+            "Seborrheic Dermatitis (SD) features red, greasy patches, mainly caused by the overgrowth of Malassezia yeast and sebaceous gland activity.",
+            "This condition also involves immune dysregulation and is treated with antifungal creams and medicated shampoos.",
+            "Both conditions share underlying mechanisms of immune dysregulation and inflammation, impacting the quality of life for many individuals.",
+            "Human SD forms can often lead to complications in AD, particularly resulting in AD irritations on the face and neck."
+        ],
+        "annotations": [
+            {
+                "span": "0:32",
+                "mention": "Atopic and seborrheic dermatitis"
+            },
+            {
+                "span": "103:120",
+                "mention": "Atopic Dermatitis"
+            },
+            {
+                "span": "122:124",
+                "mention": "AD"
+            },
+            {
+                "span": "141:147",
+                "mention": "eczema"
+            },
+            {
+                "span": "455:476",
+                "mention": "Seborrheic Dermatitis"
+            },
+            {
+                "span": "478:480",
+                "mention": "SD"
+            },
+            {
+                "span": "850:852",
+                "mention": "SD"
+            },
+            {
+                "span": "894:896",
+                "mention": "AD"
+            },
+            {
+                "span": "924:926",
+                "mention": "AD"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "```\n<entity type=disease>Atopic dermatitis</entity> and <entity type=disease>seborrheic dermatitis</entity> are common inflammatory skin conditions affecting millions worldwide.\n```",
+            "Text:\n```<entity type=disease>Atopic Dermatitis (AD)</entity>, known also as <entity type=disease>eczema</entity>, is characterized by dry, itchy skin due to a combination of genetic predisposition and environmental triggers.```",
+            "Text:\n```It involves an <entity type=disease>overactive immune response</entity>, particularly a Th2 response, leading to <entity type=disease>inflammation</entity> and a compromised skin barrier.```",
+            "No markup is needed as there are no disease mentions in the provided text.",
+            "Text:\n```<entity type=disease>Seborrheic Dermatitis (SD)</entity> features red, greasy patches, mainly caused by the overgrowth of Malassezia yeast and sebaceous gland activity.```",
+            "Text:\n```<entity type=disease>This condition</entity> also involves immune dysregulation and is treated with antifungal creams and medicated shampoos.```",
+            "Text:\n```Both conditions share underlying mechanisms of immune dysregulation and inflammation, impacting the quality of life for many individuals.```",
+            "Text:\n```<entity type=disease>Human SD</entity> forms can often lead to complications in <entity type=disease>AD</entity>, particularly resulting in <entity type=disease>AD irritations</entity> on the face and neck.```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "Atopic and <entity type=disease>seborrheic dermatitis</entity> are common inflammatory skin conditions affecting millions worldwide.",
+            "```\n<entity type=disease>Atopic Dermatitis</entity> (<entity type=disease>AD</entity>), known also as <entity type=disease>eczema</entity>, is characterized by dry, itchy skin due to a combination of genetic predisposition and environmental triggers.\n```",
+            "Text:\n```It involves an <entity type=disease>overactive immune response</entity>, particularly a <entity type=disease>Th2 response</entity>, leading to inflammation and a compromised skin barrier.```",
+            "Text:\n```Treatment often includes moisturizers and topical corticosteroids.```\n",
+            "```\n<entity type=disease>Seborrheic Dermatitis</entity> (<entity type=disease>SD</entity>) features red, greasy patches, mainly caused by the overgrowth of Malassezia yeast and sebaceous gland activity.\n```",
+            "This <entity type=disease>tinea capitis</entity> condition also involves immune dysregulation and is treated with antifungal creams and medicated shampoos.",
+            "Both conditions share underlying mechanisms of immune dysregulation and inflammation, impacting the quality of life for many individuals.",
+            "```\nHuman <entity type=disease>SD forms</entity> can often lead to complications in <entity type=disease>AD</entity>, particularly resulting in <entity type=disease>AD</entity> irritations on the face and neck.\n```"
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"atopic dermatitis; seborrheic dermatitis\"}\n```",
+            "```\njson:\n{\"diseases\": \"Atopic Dermatitis; eczema\"}\n```",
+            "```\njson:\n{\"diseases\": \"atopic dermatitis\"}\n```",
+            "```\njson:\n{\"diseases\": \"\"}\n```",
+            "```\njson:\n{\"diseases\": \"Seborrheic Dermatitis\"}\n```",
+            "```\njson:\n{\"diseases\": \"immune dysregulation\"}\n```",
+            "```\njson:\n{\"diseases\": \"\"}\n```",
+            "```\njson:\n{\"diseases\": \"seborrheic dermatitis; atopic dermatitis\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "json:\n{\"diseases\": \"Atopic dermatitis; seborrheic dermatitis\"}",
+            "```json\n{\"diseases\": \"Atopic Dermatitis; AD\"}\n```",
+            "json:\n{\"diseases\": \"atopic dermatitis\"}\n```",
+            "json:\n{}\n(No disease entities were mentioned in the text.)",
+            "```json\n{\"diseases\": \"Seborrheic Dermatitis; SD\"}\n```",
+            "json:\n{\"diseases\": \"tinea capitis\"}",
+            "json:\n{\"diseases\": \"immune dysregulation; inflammation\"}",
+            "json:\n{\"diseases\": \"Human SD forms; AD\"}"
+        ]
+    },
+    "1000010": {
+        "text": "Celiac or Coeliac disease and non-celiac gluten sensitivity (NCGS) are conditions associated with adverse responses to gluten. Celiac disease is an autoimmune disorder characterized by the activation of tissue transglutaminase (tTG) antibodies, leading to inflammation and villous atrophy in the small intestine when gluten is consumed. This results in malabsorption of nutrients, anemia, and other complications. Conversely, NCGS does not involve an autoimmune response or intestinal damage, but still produces gastrointestinal symptoms such as bloating and abdominal pain. In animals, NCGS has been observed in dogs, resulting in similar gastrointestinal distress, but it does not exhibit the same autoimmune pathology as seen in human NCGS. While patients with celiac disease require a strict gluten-free diet to prevent complications, individuals with NCGS often benefit from a gluten-reduced diet without the need for complete avoidance.",
+        "sentences": [
+            "Celiac or Coeliac disease and non-celiac gluten sensitivity (NCGS) are conditions associated with adverse responses to gluten.",
+            "Celiac disease is an autoimmune disorder characterized by the activation of tissue transglutaminase (tTG) antibodies, leading to inflammation and villous atrophy in the small intestine when gluten is consumed.",
+            "This results in malabsorption of nutrients, anemia, and other complications.",
+            "Conversely, NCGS does not involve an autoimmune response or intestinal damage, but still produces gastrointestinal symptoms such as bloating and abdominal pain.",
+            "In animals, NCGS has been observed in dogs, resulting in similar gastrointestinal distress, but it does not exhibit the same autoimmune pathology as seen in human NCGS.",
+            "While patients with celiac disease require a strict gluten-free diet to prevent complications, individuals with NCGS often benefit from a gluten-reduced diet without the need for complete avoidance."
+        ],
+        "annotations": [
+            {
+                "span": "0:25",
+                "mention": "Celiac or Coeliac disease"
+            },
+            {
+                "span": "30:59",
+                "mention": "non-celiac gluten sensitivity"
+            },
+            {
+                "span": "61:65",
+                "mention": "NCGS"
+            },
+            {
+                "span": "127:141",
+                "mention": "Celiac disease"
+            },
+            {
+                "span": "426:430",
+                "mention": "NCGS"
+            },
+            {
+                "span": "587:591",
+                "mention": "NCGS"
+            },
+            {
+                "span": "738:742",
+                "mention": "NCGS"
+            },
+            {
+                "span": "764:778",
+                "mention": "celiac disease"
+            },
+            {
+                "span": "856:860",
+                "mention": "NCGS"
+            }
+        ],
+        "response_markup_phi3_small": [
+            "Text:\n```<entity type=disease>Celiac or Coeliac disease</entity> and non-celiac gluten sensitivity (NCGS) are conditions associated with adverse responses to gluten.```",
+            "```html\n<entity type=disease>Celiac disease</entity> is an autoimmune disorder characterized by the activation of tissue transglutaminase (tTG) antibodies, leading to inflammation and villous atrophy in the small intestine when gluten is consumed.\n```",
+            "Text:\n```This results in <entity type=disease>malabsorption</entity> of nutrients, <entity type=disease>anemia</entity>, and other complications.```",
+            "```\nConversely, <entity type=disease>NCGS</entity> does not involve an autoimmune response or intestinal damage, but still produces gastrointestinal symptoms such as bloating and abdominal pain.\n```",
+            "```\nIn animals, <entity type=disease>NCGS</entity> has been observed in dogs, resulting in similar gastrointestinal distress, but it does not exhibit the same autoimmune pathology as seen in human <entity type=disease>NCGS</entity>.\n```",
+            "```\nWhile patients with <entity type=disease>celiac disease</entity> require a strict gluten-free diet to prevent complications, individuals with NCGS often benefit from a gluten-reduced diet without the need for complete avoidance.\n```"
+        ],
+        "response_markup_rules_phi3_small": [
+            "```\n<entity type=disease>Celiac or Coeliac disease</entity> and non-celiac gluten sensitivity (<entity type=disease>NCGS</entity>) are conditions associated with adverse responses to gluten.\n```",
+            "```\n<entity type=disease>Celiac disease</entity> is an autoimmune disorder characterized by the activation of tissue transglutaminase (<entity type=disease>tTG</entity>) antibodies, leading to inflammation and villous atrophy in the small intestine when gluten is consumed.\n```",
+            "This results in malabsorption of nutrients, <entity type=disease>anemia</entity>, and other complications.```",
+            "Conversely, <entity type=disease>NCGS</entity> does not involve an autoimmune response or intestinal damage, but still produces gastrointestinal symptoms such as bloating and abdominal pain.",
+            "```\nIn animals, <entity type=disease>NCGS</entity> has been observed in dogs, resulting in similar gastrointestinal distress, but it does not exhibit the same autoimmune pathology as seen in human <entity type=disease>NCGS</entity>.\n```",
+            "While patients with <entity type=disease>celiac disease</entity> require a strict gluten-free diet to prevent complications, individuals with <entity type=disease>NCGS</entity> often benefit from a gluten-reduced diet without the need for complete avoidance."
+        ],
+        "response_extract_phi3_small": [
+            "```\njson:\n{\"diseases\": \"Celiac disease; non-celiac gluten sensitivity\"}\n```",
+            "```\njson:\n{\"diseases\": \"Celiac disease\"}\n```",
+            "json:\n{\"diseases\": \"malabsorption; anemia\"}",
+            "```\njson:\n{\"diseases\": \"Non-celiac gluten sensitivity\"}\n```",
+            "```\njson:\n{\"diseases\": \"Non-Celiac Gluten Sensitivity\"}\n```",
+            "```\njson:\n{\"diseases\": \"celiac disease; NCGS\"}\n```"
+        ],
+        "response_extract_rules_phi3_small": [
+            "```json\n{\"diseases\": \"Celiac or Coeliac disease; non-celiac gluten sensitivity\"}\n```",
+            "```\njson:\n{\"diseases\": \"Celiac disease\"}\n```",
+            "json:\n{\"diseases\": \"malabsorption; anemia\"}",
+            "```\njson:\n{\"diseases\": \"Non-celiac gluten sensitivity\"}\n```",
+            "```\njson:\n{\"diseases\": \"Non-Celiac Gluten Sensitivity; NCGS\"}\n```",
+            "```\njson:\n{\"diseases\": \"celiac disease; NCGS\"}\n```"
+        ]
+    }
+}
