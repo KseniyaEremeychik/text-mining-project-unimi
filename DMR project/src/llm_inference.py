@@ -3,7 +3,7 @@ from tqdm import tqdm
 from model_names import GEMMA_2
 
 class LLMInference:
-    def __init__(self, model_name, api_key="noapikey", base_url="http://localhost:8000/v1"):
+    def __init__(self, model_name, api_key="noapikey", base_url="http://localhost:11434/v1"):
         self.client = OpenAI(base_url=base_url, api_key=api_key)
         self.model_name = model_name
 
